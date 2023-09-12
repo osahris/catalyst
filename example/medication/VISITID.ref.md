@@ -1,5 +1,5 @@
 ---
 references: visit
-cardinality: 0..*
+cardinality: 1..1
 ---
 

@@ -2,5 +2,5 @@
 ShortDescription: 
     en:
     de:
-type codesystem
+type: codesystem
 codesystem: ATC
