@@ -1,0 +1,38 @@
+[project]
+name = "catalyst"
+description = "Code generator for markdown & frontmatter based cinical dataset definitions"
+authors = [
+    {name = "Markus Brechtel", email="markus.brechtel@uk-koeln.de"},
+    {name = "Jori Kern"},
+    {name = "Nick Schulze"},
+    {name = "Meta Böniger"},
+]
+
+license = {file = "LICENSE"}
+readme = "README.md"
+requires-python = ">=3.6"
+
+dependencies = [
+    "pandas >= 1",
+    "click >= 8"
+]
+
+dynamic = ["version"]
+
+[project.urls]
+homepage = "https://github.com/osaris-dev/catalyst"
+#documentation = ""
+repository = "https://github.com/osaris-dev/catalyst"
+
+[build-system]
+requires = [
+    "setuptools >= 35.0.2",
+    "setuptools_scm >= 5.0.0"
+]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+catalyst = "catalyst_cli:cli"
+
+[tool.setuptools_scm]
+write_to = "catalyst/_version.py"
