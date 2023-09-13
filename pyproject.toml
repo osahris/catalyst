@@ -36,4 +36,4 @@ build-backend = "setuptools.build_meta"
 catalyst = "catalyst_cli:cli"
 
 [tool.setuptools_scm]
-write_to = "catalyst/_version.py"
+write_to = "src/catalyst/_version.py"
