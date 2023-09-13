@@ -16,3 +16,5 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g eslint-webpack-plugin fsh-sushi@3.3.3
+
+RUN pip install -e .
