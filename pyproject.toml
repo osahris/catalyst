@@ -33,7 +33,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project.scripts]
-catalyst = "catalyst_cli:cli"
+catalyst = "catalyst:catalyst_cli"
 
 [tool.setuptools_scm]
 write_to = "src/catalyst/_version.py"
