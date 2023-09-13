@@ -17,4 +17,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN npm install -g eslint-webpack-plugin fsh-sushi@3.3.3
 
-RUN pip install -e --break-system-packages .
+WORKDIR /opt/catalyst
+COPY ./ .
+
+RUN pip install --break-system-packages --editable .
