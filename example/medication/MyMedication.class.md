@@ -15,6 +15,8 @@ variables:
   - var: THER_ANTIINFECTIVES_DRUGNAME
   - var: THER_ANTIINFECTIVES_START
     fhir_attribute: effectivePeriod.start
+    fhir_cardinality: "1..1"
   - var: THER_ANTIINFECTIVES_END
     fhir_attribute: effectivePeriod.end
+    fhir_cardinality: "1..1"
 ---

@@ -1,9 +1,7 @@
 Profile: MyMedication
-Parent: MedicationAdministration
 Id: MyMedication
-Description: "ShortDescription from the medication class in English"
-* effectivePeriod 1..1 
-* effectivePeriod ^short = "bla short description"
+Parent: MedicationStatement
 * effectivePeriod.start 1..1
+* effectivePeriod.start ^short =  "Antiinfectives: Start date"
 * effectivePeriod.end 1..1
-* context 1..1
+* effectivePeriod.end ^short =  "Antiinfectives: End date"
