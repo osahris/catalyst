@@ -1,5 +1,5 @@
 ---
-fhir_profile: MedicationStatement
+fhir_parent: MedicationStatement
 references:
   - class: Patient
     cardinality: "1..1"
